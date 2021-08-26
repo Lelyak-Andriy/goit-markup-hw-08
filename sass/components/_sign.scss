@@ -1,0 +1,45 @@
+.sign{
+  margin-left: 93px;
+}
+
+.sign__slogan{
+margin-bottom: 20px;
+аont-style: 700;
+font-size: 14px;
+line-height: 1.142;
+text-transform: uppercase;
+color: $text-white;
+letter-spacing: 0.03em;
+}
+
+.footer-form{
+  display: flex;
+}
+
+.footer-form__mail{
+padding: 15px 295px 15px 16px;
+background-color: $footer-bcg;
+color:rgba(255, 255, 255, 0.6);
+width: 358px;
+height: 50px;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+font-style: 700;
+аont-size: 16px;
+line-height: 1.25;
+Align: Left;
+vertical-align: Center;
+Letter-spacing: 0.03em;
+resize:none;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&:focus-within{
+border-color: $accent-color;
+outline: none;
+}
+
+&::placeholder{
+color: rgba(255, 255, 255, 0.6);
+}
+}

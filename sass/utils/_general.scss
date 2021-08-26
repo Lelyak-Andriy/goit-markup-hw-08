@@ -1,0 +1,56 @@
+body {
+  background-color: $primary-bgc;
+  color: $primary-text-color;
+  font-family: $primary-font;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+/* Видаляємо крапки в списках */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Глобальний сброс */
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: $title-color;
+}
+
+/* Додатковий клас контейнер */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+ 
+/* outline: 2px solid #188ce8; */
+
+/* Розбивка по секціям */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section--no-padding {
+  padding-bottom: 0;
+}

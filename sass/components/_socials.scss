@@ -1,0 +1,32 @@
+.socials{
+  display: flex;
+}
+
+.socials__link{
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials__link:hover,
+.socials__link:focus{
+  background:$accent-color;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials__icon-instagram,
+.socials__icon-twitter,
+.socials__icon-facebook,
+.socials__icon-linkedin{
+  width: 20px;
+  height: 20px;
+  fill:$text-white;
+}

@@ -1,0 +1,22 @@
+.part {
+  padding: 20px 24px;
+  background-color: $primary-bgc;
+  text-align: left;
+  border: 1px solid #eeeeee;
+}
+
+.part__title {
+  margin-bottom: 4px;
+  color: $title-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.part__work-item {
+  color: $primary-text-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}

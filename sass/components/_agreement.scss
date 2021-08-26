@@ -1,0 +1,63 @@
+.agree{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+margin-bottom: 30px;
+margin-left: auto;
+margin-right: auto;
+color:$primary-text-color;
+}
+
+
+.agree__checkbox{     
+ position: absolute;     
+-webkit-appearance:none;    
+-moz-appearance:none;    
+ appearance: none;    
+ 
+ &:checked + .agree__checkbox-icon{   
+  opacity: 0;   
+ }
+
+ &:checked + .agree__checkbox-icon + .agree__check{   
+ width: 16px;     
+height: 15px;    
+background-color: $accent-color;     
+ fill:$text-white;  
+ border: 2px solid $accent-color;   
+border-radius: 2px;  
+margin-right: 7px; 
+ opacity: 1;
+  }
+}  
+
+.agree__checkbox-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 7px;
+  
+ }
+
+.agree__check{ 
+display: inline-block;  
+width: 16px;    
+height: 15px; 
+background-color: $accent-color;  
+fill:$text-white;   
+border: 2px solid $accent-color; 
+border-radius: 2px; 
+margin-left: -23px;
+margin-right: 7px;  
+opacity: 0;
+ } 
+
+.agree__link{  
+margin-left: 5px; 
+color: $accent-color; 
+}
