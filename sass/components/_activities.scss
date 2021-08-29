@@ -1,3 +1,10 @@
+.section-activities{
+  display: none;
+  @media screen and (min-width:1200px){
+    display: block;
+  }
+}
+
 .section-activities__title {
   margin-bottom: 50px;
   color: $title-color;

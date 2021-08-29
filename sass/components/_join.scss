@@ -1,8 +1,13 @@
 .join{
-  margin-left: 70px;
+  margin-bottom: 60px;
+  @media screen and (min-width:1200px){
+    margin-left: 70px;
+    
+  }
  }
 
 .join__slogan{
+  display: block;
 margin-bottom: 20px;
 font-style: 700;
 font-size: 14px;

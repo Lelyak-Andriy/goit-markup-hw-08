@@ -1,5 +1,8 @@
 .sign{
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    
+  }
 }
 
 .sign__slogan{
@@ -13,7 +16,10 @@ letter-spacing: 0.03em;
 }
 
 .footer-form{
+  display: block;
+  @media screen and (min-width: 1200px){
   display: flex;
+}
 }
 
 .footer-form__mail{
