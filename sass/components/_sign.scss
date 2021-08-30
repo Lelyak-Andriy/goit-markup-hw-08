@@ -1,4 +1,5 @@
 .sign{
+  
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
     
@@ -6,8 +7,10 @@
 }
 
 .sign__slogan{
+margin-left: 130px;
+margin-right: auto;
 margin-bottom: 20px;
-аont-style: 700;
+font-style: 700;
 font-size: 14px;
 line-height: 1.142;
 text-transform: uppercase;
@@ -23,15 +26,19 @@ letter-spacing: 0.03em;
 }
 
 .footer-form__mail{
-padding: 15px 295px 15px 16px;
-background-color: $footer-bcg;
-color:rgba(255, 255, 255, 0.6);
-width: 358px;
+display: inline-flex;
+margin-left: 0;
+margin-right: auto;
+margin-bottom: 20px;
+width: 450px;
 height: 50px;
 border: 1px solid #AFB1B8;
 border-radius: 4px;
+padding: 15px 387px 15px 16px;
+background-color: $footer-bcg;
+color:rgba(255, 255, 255, 0.6);
 font-style: 700;
-аont-size: 16px;
+font-size: 16px;
 line-height: 1.25;
 Align: Left;
 vertical-align: Center;

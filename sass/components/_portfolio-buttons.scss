@@ -1,11 +1,29 @@
 .portfolio {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px){
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    
+  }
+}
+
+.portfolio__item{
+  @media screen and (min-width: 1200px){
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 
 .portfolio__item:not(:last-child) {
+  @media screen and (min-width: 1200px){
   margin-right: 8px;
+  margin-bottom: 15px;
+}
 }
 
 .portfolio__button {

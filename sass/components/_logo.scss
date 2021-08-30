@@ -10,6 +10,11 @@
   line-height: 1.17;
   
   @media screen and (min-width:768px){
+  margin-right: 88px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+@media screen and (min-width:1200px){
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -17,12 +22,21 @@
   line-height: 1.2;
 }
 }
+
 .header__logo--accent {
   color: $accent-color;
 }
 
+.logo-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer__logo{
   display: block;
+  margin-left: 163px;
+  margin-right: 163px;
   margin-bottom: 20px;
   color: $accent-color;
   text-decoration: none;
