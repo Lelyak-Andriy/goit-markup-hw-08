@@ -1,5 +1,10 @@
 .join{
+  outline: 1px solid aquamarine;
   margin-bottom: 60px;
+  @media screen and (min-width: 768px){
+    margin-left: 0;
+    margin-right: 0;
+  }
   @media screen and (min-width:1200px){
     margin-left: 70px;
     
@@ -19,5 +24,9 @@ line-height: 1.142;
 text-transform: uppercase;
 letter-spacing: 0.03em;
 color: $text-white;
+@media screen and (min-width: 768px){
+  margin-left: 0;
+  margin-right: 89px;
+}
 }
 
