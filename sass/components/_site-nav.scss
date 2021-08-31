@@ -3,6 +3,7 @@
   @media screen and (min-width:768px) {
    display: flex;
    margin-left: 0;
+   margin-right: 70px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   }
   
@@ -17,9 +18,10 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-&:last-child{
-  margin-right: 0;
+  
+  &:last-child{
+    margin-right: 0;
+  }
 }
 
 
@@ -42,7 +44,8 @@
   color: $accent-color;
   position: relative;
 }
-&::after{
+
+.site-nav__link--current::after{
   position: absolute;
   content: "";
   display: block;
