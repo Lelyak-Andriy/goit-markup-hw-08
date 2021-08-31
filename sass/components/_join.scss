@@ -1,22 +1,21 @@
 .join{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   outline: 1px solid aquamarine;
   margin-bottom: 60px;
   @media screen and (min-width: 768px){
-    margin-left: 0;
-    margin-right: 0;
+   margin-left: 80px;
   }
   @media screen and (min-width:1200px){
-    margin-left: 70px;
+    
     
   }
 }
 
 .join__slogan{
-  display: block;
-  
-  margin-left: 167px;
-  margin-right: 167px;
-  
+  display: block;  
 margin-bottom: 20px;
 font-style: 700;
 font-size: 14px;
@@ -25,8 +24,7 @@ text-transform: uppercase;
 letter-spacing: 0.03em;
 color: $text-white;
 @media screen and (min-width: 768px){
-  margin-left: 0;
-  margin-right: 89px;
+  
 }
 }
 

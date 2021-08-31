@@ -1,11 +1,13 @@
 .address{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   outline: 1px solid aqua;
-  margin-left: auto;
-  margin-right: auto;
+  
   margin-bottom: 60px;
   @media screen and (min-width: 768px){
-    margin-left: 0;
-    margin-right: 0;
+    
   }
 }
 
@@ -23,8 +25,6 @@
 
 .address__link {
   display: block;
-  margin-left: 43px;
-
   margin-bottom: 8px;
   color: $primary-text-color;
   text-decoration: none;

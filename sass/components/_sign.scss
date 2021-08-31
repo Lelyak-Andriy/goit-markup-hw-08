@@ -1,6 +1,9 @@
 .sign{
   outline: 1px solid yellow;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
     
@@ -8,8 +11,7 @@
 }
 
 .sign__slogan{
-margin-left: 130px;
-margin-right: auto;
+
 margin-bottom: 20px;
 font-style: 700;
 font-size: 14px;
@@ -18,16 +20,17 @@ text-transform: uppercase;
 color: $text-white;
 letter-spacing: 0.03em;
 @media screen and (min-width: 768px){
-    margin-left: auto;
-    margin-right: auto;
+    
   }
 }
 
 .footer-form{
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @media screen  and (min-width: 768px){
-    margin-left: auto;
-    margin-right: auto;
+    
   }
   @media screen and (min-width: 1200px){
   display: flex;
