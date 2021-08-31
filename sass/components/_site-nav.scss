@@ -41,7 +41,7 @@
 .site-nav__link--current {
   color: $accent-color;
   position: relative;
-
+}
 &::after{
   position: absolute;
   content: "";
@@ -53,6 +53,6 @@
   border-radius: 2px;
   background-color: $accent-color;
 }
-}
+
 
 
