@@ -867,6 +867,18 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container__footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .tablet {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -890,6 +902,17 @@ img {
         -ms-flex-align: baseline;
             align-items: baseline;
     outline: 1px solid green;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tablet {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1071,6 +1094,10 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -1103,6 +1130,15 @@ img {
   .footer-form__mail {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__mail {
+    padding: 15px 295px 15px 16px;
+    width: 358px;
+    height: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -1513,12 +1549,7 @@ img {
 
 .portfolio__item:not(:last-child) {
   margin-right: 8px;
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio__item:not(:last-child) {
-    margin-bottom: 15px;
-  }
+  margin-bottom: 15px;
 }
 
 .portfolio__button {
@@ -1562,6 +1593,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .works {
+    margin-bottom: 0;
+  }
+}
+
 .works__item {
   width: 100%;
 }
@@ -1578,8 +1615,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .works__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
+    width: calc((100% - 3 * 30px) / 3);
   }
   .works__item:nth-child(3n) {
     margin-right: 0;
@@ -1647,6 +1683,20 @@ img {
   background-color: #ffffff;
   text-align: left;
   border: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) {
+  .part {
+    width: 354px;
+    height: 146px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .part {
+    width: 370px;
+    height: 110px;
+  }
 }
 
 .part__title {

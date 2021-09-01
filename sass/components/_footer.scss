@@ -12,7 +12,8 @@
     justify-content: center;
   }
   @media screen and (min-width: 1200px){
-  // align-items:baseline;
+  flex-direction: row;
+    align-items: flex-start;
 }
 }
 
@@ -27,4 +28,8 @@ align-items:baseline;
 
     outline: 1px solid green;
   }
+@media screen and (min-width: 1200px) {
+  justify-content: center;
+  align-items: flex-start;
+}
 }
