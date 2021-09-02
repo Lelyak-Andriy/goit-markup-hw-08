@@ -23,23 +23,30 @@
         <a href="index.html" class="header__logo"> <span class="header__logo--accent">Web</span>Studio </a>
         <!--Навігація по сайту-->
         <!-- current підсвічує активну сторінку -->
-        
-        <nav>
-            <ul class="site-nav">
-                <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
-                <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
-                <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+        <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg width="24px" height="16" aria-label="перемикач мобільного меню">
+                <use class="menu-button__icon-menu" href="./images/symbol-defs-opt.svg#icon-menu"></use>
+                <use class="menu-button__icon-menuclose" href="./images/symbol-defs-opt.svg#icon-menuclose"></use>
+            </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+            <nav>
+                <ul class="site-nav">
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+                    <!-- Контактна інформація-->
+            <ul class="header-contact">
+                <li class="header-contact__item"><a href="mailto:info@devstudio.com" class="header-contact__link">
+                    <svg class="header-contact__icon-envelope"><use href="./images/symbol-defs-opt.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
+                <li class="header-contact__item"><a href="tel:+380961111111" class="header-contact__link">
+                    <svg class="header-contact__icon-phone">
+                    <use href="./images/symbol-defs-opt.svg#icon-phone"></use>
+                </svg>+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-                <!-- Контактна інформація-->
-        <ul class="header-contact">
-            <li class="header-contact__item"><a href="mailto:info@devstudio.com" class="header-contact__link">
-                <svg class="header-contact__icon-envelope"><use href="./images/symbol-defs-opt.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
-            <li class="header-contact__item"><a href="tel:+380961111111" class="header-contact__link">
-                <svg class="header-contact__icon-phone">
-                <use href="./images/symbol-defs-opt.svg#icon-phone"></use>
-            </svg>+38 096 111 11 11</a></li>
-        </ul>
+        </div>
         
     </div>
     </header>
@@ -80,18 +87,18 @@
             <h2 class="section-activities__title">Чем мы занимаемся</h2>
             <ul class="busyness">
                 <li class="busyness__item"><div class="box">
-                    <img src="./images/image1.jpg" alt="printing hands" width="370" height="294" />
+                    <img srcset="./images/image1.jpg 1x, ./images/image1@2x.jpg 2x" src="./images/image1.jpg" alt="printing hands" width="370" height="294" />
                     <div class="overlay"><p class="overlay__text">Десктопные приложения</p></div>
                     </div>
                 </li>
                 <li class="busyness__item"><div class="box">
-                    <img src="./images/image2.jpg" alt="phone in hands" width="370" height="294" /><div class="overlay">
+                    <img srcset="./images/image2.jpg 1x, ./images/image2@2x.jpg 2x" src="./images/image2.jpg" alt="phone in hands" width="370" height="294" /><div class="overlay">
                         <p class="overlay__text">Мобильные приложения</p>
                     </div>
                     </div>
                 </li>
                 <li class="busyness__item"><div class="box">
-                    <img src="./images/image3.jpg" alt="tablet in a hand" width="370" height="294" /><div class="overlay">
+                    <img srcset="./images/image3.jpg 1x, ./images/image3@2x.jpg 2x" src="./images/image3.jpg" alt="tablet in a hand" width="370" height="294" /><div class="overlay">
                         <p class="overlay__text">Дизайнерские решения</p>
                     </div>
                     </div>
@@ -105,7 +112,7 @@
             <h2 class="section-team__title">Наша команда</h2>
             <ul class="people">
             <li class="people__item">
-                <img src="./images/image4.jpg" alt="igor-demyanenko" width="270" height="260" />
+                <img srcset="./images/img4mob.jpg 1x, ./images/img4mob@2x.jpg 2x" src="./images/img4mob.jpg" alt="igor-demyanenko" />
             <div class="name"><h3 class="name__team-item">Игорь Демьяненко</h3>
             <p class="name__profession">Product Designer</p>
                 <ul class="socialnets">
@@ -121,7 +128,7 @@
             </div></li>
 
             <li class="people__item">
-                <img src="./images/image5.jpg" alt="olga-repina" width="270" height="260" />
+                <img srcset="./images/img5mob.jpg 1x, ./images/img5mob@2x.jpg 2x" src="./images/img5mob.jpg" alt="olga-repina" />
             <div class="name"><h3 class="name__team-item">Ольга Репина</h3>
             <p class="name__profession">Frontend Developer</p>
             <ul class="socialnets">
@@ -138,7 +145,7 @@
             </ul></div></li>
 
             <li class="people__item">
-                <img src="./images/image6.jpg" alt="nikolay-tarasov" width="270" height="260" />
+                <img srcset="./images/img6mob.jpg 1x, ./images/img6mob@2x.jpg 2x" src="./images/img6mob.jpg" alt="nikolay-tarasov" />
             <div class="name"><h3 class="name__team-item">Николай Тарасов</h3>
             <p class="name__profession">Marketing</p>
             <ul class="socialnets">
@@ -155,7 +162,7 @@
             </ul></div></li>
 
             <li class="people__item">
-                <img src="./images/image7.jpg" alt="nikolay-tarasov" width="270" height="260" />
+                <img srcset="./images/img7mob.jpg 1x, ./images/img7mob@2x.jpg 2x" src="./images/img7mob.jpg" alt="nikolay-tarasov" />
             <div class="name"><h3 class="name__team-item">Михаил Ермаков</h3>
             <p class="name__profession">UI Designer</p>
             <ul class="socialnets">
@@ -306,6 +313,7 @@
         </div>
     </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 
 </html>
