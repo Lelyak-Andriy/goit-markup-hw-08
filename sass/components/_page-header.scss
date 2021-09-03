@@ -7,47 +7,54 @@
 .container__header {
   position: relative;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   @media screen and (min-width:1200px){
     justify-content: space-between;
   
   }
 }
+
+.menu-button{
+display: inline-block;
+margin: 0;
+padding: 0;
+border: none;
+background-color: transparent;
+}
+
+.menu-button{
+  .icon-cross{
+display: none;
+}
+}
+
+.menu-button.is-open{
+  .icon-cross{
+display: block;
+}
+.icon-menu{
+  display: none;
+}
+}
+
 .menu-container{
   display: none;
   position: absolute;
   top:100% ;
   left: 0;
   width: 100%;
-  display: flex;
-  
-  padding: 48px, 40px;
+  padding: 48px 40px;
   outline: 1px solid violet;
-  background-color: wheat;
-}
-
-.menu-container.is-open{
-  display: block;
-}
-
-.menu-button{
-  display: inline-block;
-  margin-left: 276px;
-  // margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
+  background-color: aqua;
+  
+  &.is-open{
+    display: block;
+  }
+  // display: flex;
+  }
 
 
-.menu-button__icon-menuclose{
-  display: none;
-}
 
-.menu-button.is-open.menu-button__icon-menuclose{
-  display: block;
-}
 
-.menu-button.is-open.menu-button__icon-menu{
-  display: none;
-}
+
+

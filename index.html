@@ -23,13 +23,21 @@
         <a href="index.html" class="header__logo"> <span class="header__logo--accent">Web</span>Studio </a>
         <!--Навігація по сайту-->
         <!-- current підсвічує активну сторінку -->
-        <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-            <svg width="24px" height="16" aria-label="перемикач мобільного меню">
-                <use class="menu-button__icon-menu" href="./images/symbol-defs-opt.svg#icon-menu"></use>
-                <use class="menu-button__icon-menuclose" href="./images/symbol-defs-opt.svg#icon-menuclose"></use>
+        <button type="button" 
+                class="menu-button js-open-menu" 
+                aria-expanded="false" 
+                aria-controls="menu-container"
+                data-menu-button>
+            <svg
+                width="24px" 
+                height="16" 
+                aria-label="перемикач мобільного меню">
+                <use class="icon-cross" href="./images/symbol-defs-opt.svg#icon-cross"></use>
+                <use class="icon-menu" href="./images/symbol-defs-opt.svg#icon-menu"></use>
             </svg>
         </button>
         <div class="menu-container" id="menu-container" data-menu>
+            
             <nav>
                 <ul class="site-nav">
                     <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
@@ -41,11 +49,18 @@
             <ul class="header-contact">
                 <li class="header-contact__item"><a href="mailto:info@devstudio.com" class="header-contact__link">
                     <svg class="header-contact__icon-envelope"><use href="./images/symbol-defs-opt.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
-                <li class="header-contact__item"><a href="tel:+380961111111" class="header-contact__link">
+                <li class="header-contact__item"><a href="tel:+380961111111" class="header-contact__link header-contact__link--phone">
                     <svg class="header-contact__icon-phone">
                     <use href="./images/symbol-defs-opt.svg#icon-phone"></use>
                 </svg>+38 096 111 11 11</a></li>
             </ul>
+            <ul class="nets">
+                <li class="nets__item"><a href="#" class="nets__link nets__link--first">Instagram</a>
+                <li class="nets__item"><a href="#" class="nets__link">Twitter</a>
+                <li class="nets__item"><a href="#" class="nets__link">Facebook</a>
+                <li class="nets__item"><a href="#" class="nets__link">LinkedIn</a>
+            </ul>
+
         </div>
         
     </div>
@@ -304,7 +319,7 @@
                 <input class="agree__checkbox" type="checkbox" name="agree" id="agree"/>
                  <span class="agree__checkbox-icon"></span>
                 <svg class="agree__check"><use href="./images/symbol-defs-opt.svg#icon-check"></use></svg>
-                <span>Соглашаюсь с рассылкой и принимаю<a href="#" class="agree__link">
+                <span class="contract">Соглашаюсь с рассылкой и принимаю<a href="#" class="agree__link">
                 Условия договора</a></span>
                 </label>
                                     
@@ -313,7 +328,10 @@
         </div>
     </div>
 <script src="./js/modal.js"></script>
-<script src="./js/menu.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
