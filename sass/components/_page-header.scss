@@ -10,6 +10,7 @@
   justify-content: space-between;
   @media screen and (min-width:1200px){
     justify-content: space-between;
+    align-items: center;
   
   }
 }
@@ -20,6 +21,14 @@ margin: 0;
 padding: 0;
 border: none;
 background-color: transparent;
+@media screen and (min-width: 768px) {
+  display: none;
+}
+
+&:hover,
+&:focus{
+  fill: $accent-color;
+}
 }
 
 .menu-button{
@@ -38,19 +47,28 @@ display: block;
 }
 
 .menu-container{
-  display: none;
-  position: absolute;
-  top:100% ;
-  left: 0;
-  width: 100%;
-  padding: 48px 40px;
-  outline: 1px solid violet;
-  background-color: aqua;
-  
-  &.is-open{
-    display: block;
+  // display: none;
+z-index: 999;
+  // outline: 1px solid violet;
+  // background-color: rgb(194, 213, 27);
+  // overflow-y: scroll;
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top:100% ;
+    left: 0;
+    width: 100%;
+    padding: 48px 40px;
+    &.is-open{
+      display: block;
+    }
   }
-  // display: flex;
+  @media screen and (min-width: 768px){
+    display: flex;
+  }
+  @media screen and (min-width: 1200px){
+    margin: 0;
+  }
   }
 
 

@@ -10,10 +10,15 @@ margin-right: auto;
 margin-bottom:12px;  
 font-style: 700;
 Font-size: 20px;
-Line-height: 1.15;
-Align: Center;
+Line-height: 1.5;
+text-align: Center;
 vertical-align: Top;
 Letter-spacing: 0.03em;
 color:$title-color;
+@media screen and (min-width: 1200px) {
+  Font-size: 16px;
+  Line-height: 1.15;
+  
+}
 }
 
