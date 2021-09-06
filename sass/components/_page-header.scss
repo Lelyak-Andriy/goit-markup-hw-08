@@ -48,9 +48,9 @@ display: block;
 
 .menu-container{
   // display: none;
-z-index: 999;
+  z-index: 999;
   // outline: 1px solid violet;
-  // background-color: rgb(194, 213, 27);
+  background-color:#fff;
   // overflow-y: scroll;
   @media screen and (max-width: 767px) {
     display: none;
